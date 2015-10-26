@@ -5,7 +5,8 @@ Week Eight Labs
 
 Lab One
 
-Part One:  
+Part One:    
+:turtle:  
 To do this lab, you will be modifying the code in **index.html**  Don't panic. You are not touching any of the HTML code, only the Python part of it.  Here is what to do:  
 
 Look inside the index.html file. Inside it, at about line 50, you will see python code that starts with:  
