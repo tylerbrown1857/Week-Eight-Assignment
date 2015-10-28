@@ -21,15 +21,19 @@ You can run this code by "running" the html file in cloud9.  This will start a s
 
 You can make changes directly on the page in your browser to test them, but they will not be saved in the HTML file.  Open up the index.html file in the IDE and delete the *for* block. Now you should write your own code.  Your python code should do the following:  
 
-1. Prompt the user for the desired number of sides for a polygon.   
-2. Draw the polygon.  
+1. Prompt the user for the desired number of sides for a polygon. 
+2. Sanitize the input.  The value the user enters should be greater than 2 and less than 25.
+2. Draw a polygon with the requested number of sides.  
 
 **Hints:**   
 The interior angle of a regular polygon is ((sides− 2)×180)/sides.  
 Remember to subtract that angle from 180.  
 You will need to play around with the forward distance to get the turtle to stay inside the graphics canvas.  
-Also, remember that the *input* statement always returns a string.  
-(As a side note, this code is actually python 2 not python 3. It shouldn't matter EXCEPT that python 2 does not have an 'eval' function.  Is there another way to convert a string to an integer?)
+As for sanitizing the input, you can't really draw a 2 (or less) sided polygon. You can create one with more sides,
+but after a certain point, it is just circle. 
+You can either put the input inside a loop or simply end the program if the number of sides is out of bounds.  
+(As a side note, this code is actually python 2 not python 3. It shouldn't matter EXCEPT that in python 2,
+the *input* function assumes you are entering a numeric value. In python 2 you use **raw_input** to enter a string.)
 
 
 Optional Exercise: 
