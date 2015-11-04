@@ -47,13 +47,27 @@ function runit() {
 <h3>Try This</h3> 
 <form> 
 <textarea id="yourcode" cols="40" rows="10">
+
 import turtle
 t = turtle.Turtle()
 
-for c in ["red","green","blue","yellow","orange"]:
-    t.color(c)
-    t.forward(100)
-    t.left(144)
+sides = int(input("Enter a number of sides between 3 and 25: "))
+
+if sides in range(3,26):
+    x = 180 -((sides - 2)*180/sides)
+
+else:
+    print("Number nor in range. ")
+
+l = x/2
+
+for c in range(sides):
+    t.color("purple")
+    t.forward(l)
+    t.left(x)
+
+
+
 
 </textarea><br /> 
 <button type="button" onclick="runit()">Run</button> 
